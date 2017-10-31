@@ -1,0 +1,121 @@
+$_file: './../image/';
+.square{
+    width: 700px;
+    height: 1000px;
+    float: left;
+}
+
+.title{
+    font-size: 30px;
+    margin: 0 auto;
+}
+.game{
+    width: 400px;
+    height: 800px;
+    background: #F2FAFF;
+    border: 1px solid #1613D1;
+    border-top: none;
+    position: relative;
+    float: left;
+}
+.next{
+    width: 160px;
+    height: 160px;
+    background: #F2FAFF;
+    border: 1px solid #1613D1;
+    position: relative;
+    float: left;
+    margin-left: 40px;
+}
+.info{
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.none, .current, .done{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.none{
+    background: #F2FAFF;
+}
+.current{
+    background: pink;
+    border: 1px solid red;
+}
+.done{
+    background: gray;
+    border: 1px solid black;
+}
+
+.skill-none,.bao,.shen,.wan,.gui{
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: #F2FAFF;
+    border: 1px solid #1613D1;
+    position: relative;
+}
+
+.bao{
+    background-image: url( $_file + 'dibao.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    // background: url("./../src/image/dibao.png") no-repeat center;
+    &::before{
+        content: '地爆天星';
+        color: #4dafce;
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+}
+
+.shen{
+    background-image: url( $_file + 'shen.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    // background: url("./../src/image/shen.png") no-repeat center;
+    &::before{
+        content: '神罗天征';
+        color: #b56791;
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+}
+
+.wan{
+    background-image: url( $_file + 'wan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    // background: url("./../src/image/wan.jpg") no-repeat center;
+    &::before{
+        content: '万象天引';
+        color: #d8af36;
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+}
+
+.gui{
+    background-image: url( $_file + 'gui.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    // background: url("./../src/image/gui.png") no-repeat center;
+    &::before{
+        content: '尸鬼封尽';
+        color: #b60ae6;
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+}
