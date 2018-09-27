@@ -15,4 +15,4 @@ window.onload = e => {
     });
 }
 
-console.log(1)
+console.log(2)
